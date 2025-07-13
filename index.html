@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
 </head>
 
-<body class="container p-0 m-0">
+<body class="  p-0 m-0">
   <!-- Header section -->
 
 
@@ -24,30 +24,85 @@
   </div> -->
 
 
-  <div class="relative h-[60vh] w-full bg-white ">
+  <div class="relative h-[55vh] md:h-[55vh] lg:h-[40vh]  w-[100%]   ">
+
     <!-- Background shape -->
-    <div class="bg-[#0891b2] h-[45dvh] [clip-path:polygon(0_0,100%_0,100%_60%,0_100%)]"></div>
+    <div class="bg-[#0891b2] h-[45dvh] md:h-[40vh] [clip-path:polygon(0_0,100%_0,100%_60%,0_100%)]"></div>
 
-    <!-- Image + Text -->
-    <div class="absolute top-0 left-0 w-full h-[60vh]">
+    <!-- Image   -->
+    <div class="  md:hidden absolute top-0  left-0 w-full h-[60vh] md:h-[43vh] md:max-w-[50%] md:p-4">
       <!-- Image -->
-      <img src="images/profile.jpg" alt="Overlay" class="w-full h-full object-cover p-5 drop-shadow-2xl" />
-
-      <!-- Text Overlay -->
-      <div class="absolute bottom-0 right-0 w-full h-full flex flex-col items-center justify-end text-white p-8">
+      <img src="images/profile.jpg" alt="Overlay" class=" w-full h-full object-cover p-5 drop-shadow-2xl" />
+    </div>
+    <!-- Text Overlay -->
+    <div
+      class=" md:hidden absolute bottom-0  md:top-10 right-0 md:left-[15%] w-full md:h-max h-full flex flex-col items-center   justify-end text-white p-8">
+      <h1 class="text-6xl font-normal tracking-wider">Ashley Williams</h1>
+    </div>
+    <!-- About me in MD -->
+    <div
+      class=" hidden lg:hidden  md:block absolute top-24  left-0  maxw-[50%] h-auto mt-5  bg-white mx-24 drop-shadow-xl shadow-lg">
+      <div
+        class=" md:z-10 absolute bottom-0   md:-top-28 right-0 md:left-[15%] w-full md:h-max h-full flex flex-col items-center   justify-end text-white p-8">
         <h1 class="text-6xl font-normal tracking-wider">Ashley Williams</h1>
+      </div>
+      <div class=" md:float-left  w-full h-[60vh] md:h-[26vh] md:max-w-[43%]  ">
+        <!-- Image -->
+        <img src="images/profile.jpg" alt="Overlay"
+          class="absolute md:h-[33vh] md:max-w-[48%]  -top-20 -left-10  object-cover   drop-shadow-2xl" />
+      </div>
+      <p class="text-4xl tracking-wide leading-snug font-semibold  md:text-center mt-20 px-8 mb-3 ">About
+        Me
+      </p>
+      <p class="text-2xl font-normal  px-8 pb-12 pt-5 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Totam
+        vel temporibus ut obcaecati dicta! Non magnam
+        libero ad delectus? Repellendus cupiditate delectus fuga deserunt dicta laboriosam, omnis magni esse aliquam!
+        Totam
+        vel temporibus ut obcaecati dicta! Non magnam
+        libero ad delectus? Repellendus cupiditate delectus fuga deserunt dicta laboriosam, omnis magni esse aliquam!
+      </p>
+
+    </div>
+
+    <!-- Desktop Design -->
+
+    <div class=" lg:flex  hidden md:hidden   absolute top-20 w-[89%] mx-20 h-80 bg-white  drop-shadow-xl shadow-lg  ">
+      <div class="  md:hidden lg:block    absolute -top-10  -left-10 w-[25rem]   h-[25rem]">
+        <!-- Image -->
+        <img src="images/profile.jpg" alt="Overlay" class="  w-full h-full   object-cover  drop-shadow-2xl" />
+        <div class="relative bottom-20 mx-auto w-max  ">
+          <h1 class="text-5xl font-normal tracking-normal text-white">Ashley Williams</h1>
+        </div>
 
       </div>
+
+      <div class="left-[28rem] mt-6 top-0 absolute">
+        <p class="   text-3xl font-semibold   ">About Me</p>
+        <p class="text-xl font-normal text-left mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+          vel temporibus ut obcaecati dicta! Non magnam
+          libero ad delectus? Repellendus cupiditate delectus fuga deserunt dicta laboriosam, omnis magni esse aliquam!
+        </p>
+        <div class="  flex flex-row justify-center  absolute right-0 top-60   px-8 mb-6 gap-8 w-max ">
+          <i class="devicon-github-original mr-3 text-lg"></i>
+          <i class="devicon-linkedin-plain text-lg"></i>
+          <i class="devicon-twitter-original text-lg"></i>
+        </div>
+      </div>
+
+
     </div>
   </div>
 
+
   <!-- About me -->
-  <p class="text-3xl font-semibold text-center md:text-left mt-3 px-8 mb-3 ">About Me</p>
-  <p class="text-lg font-normal text-left px-8 mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+  <p class="lg:hidden text-3xl font-semibold text-center md:text-left mt-3 px-8 mb-3 ">About Me</p>
+  <p class="lg:hidden text-lg font-normal text-left px-8 mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    Totam
     vel temporibus ut obcaecati dicta! Non magnam
     libero ad delectus? Repellendus cupiditate delectus fuga deserunt dicta laboriosam, omnis magni esse aliquam!</p>
 
-  <div class="flex flex-row justify-center md:justify-start px-8 mb-6 gap-8  ">
+  <div class="lg:hidden flex flex-row justify-center md:justify-start px-8 mb-6 gap-8  ">
     <i class="devicon-github-original mr-3 text-lg"></i>
     <i class="devicon-linkedin-plain text-lg"></i>
     <i class="devicon-twitter-original text-lg"></i>
@@ -56,7 +111,7 @@
 
 
   <!-- My Work section -->
-  <p class="text-3xl font-semibold text-center md:text-left mt-12 px-8 mb-6 ">My Work</p>
+  <p class="  text-3xl font-semibold text-center md:text-left mt-12  xl:mt-44  px-8 ml-4 mb-6 ">My Work</p>
 
   <div class=" container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-8  ">
     <!-- work cards 1 -->
